@@ -1,0 +1,71 @@
+//LOCALHOST
+
+### Get all zoo_animals
+
+GET http://localhost:3000/zoo_animals
+
+ 
+
+### Get zoo_animal by id
+
+GET http://localhost:3000/zoo_animals/651320ddb01ad0871ac2f130
+
+ 
+
+### Create zoo_animal
+
+POST http:://localhost:3000/zoo_animals HTTP/1.1
+
+content-type: application/json
+
+ 
+
+{
+    "species": "Lion",
+    "name": "Simba",
+    "idNumber": "L4564",
+    "enclosure": "Savannah",
+    "age": 5
+}
+
+ 
+
+### POST zoo_animal
+
+POST http://localhost:3000/zoo_animals/651320ddb01ad0871ac2f130 HTTP/1.1
+
+content-type: application/json
+
+ 
+
+{
+    "species": "Lion",
+    "name": "Simba",
+    "idNumber": "L4564",
+    "enclosure": "Savannah",
+    "age": 5
+}
+
+ 
+
+### PUT zoo_animal
+
+PUT http://localhost:3000/zoo_animals/651320ddb01ad0871ac2f130 HTTP/1.1
+
+content-type: application/json
+
+ 
+
+{
+    "species": "Lion",
+    "name": "Simba",
+    "idNumber": "L4564",
+    "enclosure": "Savannah",
+    "age": 5
+}
+
+ 
+
+### DELETE zoo_animal
+
+DELETE http://localhost:3000/zoo_animals/651320ddb01ad0871ac2f130 HTTP/1.1
