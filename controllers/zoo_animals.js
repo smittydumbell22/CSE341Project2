@@ -55,7 +55,7 @@ const createZoo_animal = async (req, res) => {
 const updateZoo_animal = async (req, res) => {
   //#swagger.tags=['zoo_animals']
   if (!ObjectId.isValid(req.params.id)) {
-    res.status(400).json('Must use a valid contact id to update a zoo_animal.');
+    res.status(400).json('Must use a valid zoo_animal id to update a zoo_animal.');
   }
   const zoo_animalId = new ObjectId(req.params.id);
   const zoo_animal = {
@@ -83,7 +83,7 @@ const updateZoo_animal = async (req, res) => {
 const deleteZoo_animal = async (req, res) => {
   //#swagger.tags=['zoo_animals']
   if (!ObjectId.isValid(req.params.id)) {
-    res.status(400).json('Must use a valid contact id to delete a zoo_animal.');
+    res.status(400).json('Must use a valid zoo_animal id to delete a zoo_animal.');
   }
   const zoo_animalId = new ObjectId(req.params.id);
   const response = await mongodb

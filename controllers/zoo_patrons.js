@@ -51,7 +51,7 @@ const createZoo_patron = async (req, res) => {
 const updateZoo_patron = async (req, res) => {
   //#swagger.tags=['zoo_patrons']
   if (!ObjectId.isValid(req.params.id)) {
-    res.status(400).json('Must use a valid contact id to update a zoo_patron.');
+    res.status(400).json('Must use a valid zoo_patron id to update a zoo_patron.');
   }
   const zoo_patronId = new ObjectId(req.params.id);
   const zoo_patron = {
